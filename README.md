@@ -1,7 +1,7 @@
-# AI-Enveriomental-001 — ENS160 + BME280 Environmental Sensor Breakout (Qwiic/Grove)
+# AI-Enveriomental-001 — BME688 + BME280 Environmental Sensor Breakout (Qwiic/Grove)
 
 A compact and practical **environmental sensing breakout** that combines:
-- **ENS160** — indoor air quality sensor (VOC, eCO₂ estimation, AQI)
+- **BME688** — indoor air quality sensor (VOC, eCO₂ estimation, AQI)
 - **BME280** — temperature, humidity, barometric pressure
 
 Built for makers: **plug-and-play I²C** via **Qwiic / Grove**, plus classic header pins for the old-school reliable way of wiring.
@@ -21,7 +21,7 @@ This board keeps it **modular, low friction, and easy to integrate**.
 
 ## Features
 
-- **ENS160** (VOC / eCO₂ / AQI)
+- **BME688** (VOC / eCO₂ / AQI)
 - **BME280** (T / RH / Pressure)
 - **I²C** interface (shared bus)
 - **Qwiic + Grove** connectors for fast wiring
@@ -51,7 +51,7 @@ This board keeps it **modular, low friction, and easy to integrate**.
 
 ### Default I²C Addresses (typical)
 - **BME280**: `0x76` or `0x77` (depends on SDO strap)
-- **ENS160**: commonly `0x53` (verify in your scan)
+- **BME688**: commonly `0x53` (verify in your scan)
 
 > Always run an I²C scanner first. It saves time and avoids guessing.
 
@@ -73,7 +73,7 @@ Use a standard I²C scanner sketch and confirm both devices appear.
 ### 3) Libraries
 Recommended approach:
 - Use a proven **BME280** library (Adafruit / Bosch-based)
-- Use a compatible **ENS160** library (vendor/community)
+- Use a compatible **BME688** library (vendor/community)
 
 This repo provides example code paths for both.
 
